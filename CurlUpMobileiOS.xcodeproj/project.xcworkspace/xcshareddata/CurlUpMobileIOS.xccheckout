@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>09239A97-74E8-4DE6-81BB-A6456643CB6A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CurlUpMobileIOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DDF4C011306DF2C5D98DA033EEEBA0FC3FF3DDAF</key>
+		<string>https://bitbucket.org/alyong89/curlup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CurlUpMobileIOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DDF4C011306DF2C5D98DA033EEEBA0FC3FF3DDAF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/alyong89/curlup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DDF4C011306DF2C5D98DA033EEEBA0FC3FF3DDAF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DDF4C011306DF2C5D98DA033EEEBA0FC3FF3DDAF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>curlup</string>
+		</dict>
+	</array>
+</dict>
+</plist>

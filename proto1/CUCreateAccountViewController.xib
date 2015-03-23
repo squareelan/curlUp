@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CUCreateAccountViewController" customModule="CurlUpMobileIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="4ax-ss-xmT" id="KbB-GZ-2Ef"/>
+                <outlet property="confirmPasswordTextField" destination="xku-5X-Dx8" id="UoA-Z2-KRd"/>
+                <outlet property="createAccountLabel" destination="onl-SB-2ya" id="rtq-Ux-a4B"/>
+                <outlet property="createButton" destination="vNb-uA-j3A" id="dQH-ZU-KHa"/>
+                <outlet property="emailTextField" destination="VDh-d2-I2T" id="y5h-1x-6l8"/>
+                <outlet property="firstNameTextField" destination="gfj-MR-WcC" id="1C1-l9-qib"/>
+                <outlet property="lastNameTextField" destination="HXa-yQ-Pgo" id="aBo-IO-uao"/>
+                <outlet property="passwordTextField" destination="d1m-lo-xbt" id="0Ks-UX-F5l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4ax-ss-xmT">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating Account..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onl-SB-2ya" userLabel="CreateAccountLabel">
+                    <rect key="frame" x="226" y="240" width="148" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-MR-WcC" userLabel="FirstNameTextField">
+                    <rect key="frame" x="25" y="15" width="550" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HJc-6b-OoT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                    <connections>
+                        <action selector="firstNameTextFieldTextDidChange:" destination="-1" eventType="editingChanged" id="tvN-Aa-cnr"/>
+                        <outlet property="delegate" destination="-1" id="Dlx-a6-W0v"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="HXa-yQ-Pgo" userLabel="LastNameTextField">
+                    <rect key="frame" x="25" y="70" width="550" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gHN-ux-Zng"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                    <connections>
+                        <action selector="lastNameTextFieldTextDidChange:" destination="-1" eventType="editingChanged" id="Tc5-A9-KGL"/>
+                        <outlet property="delegate" destination="-1" id="KbD-Zb-cOX"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-d2-I2T" userLabel="EmailTextField">
+                    <rect key="frame" x="25" y="125" width="550" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5Ak-qj-WUF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                    <connections>
+                        <action selector="emailTextFieldTextDidChange:" destination="-1" eventType="editingChanged" id="d0q-RU-cMU"/>
+                        <outlet property="delegate" destination="-1" id="clG-fF-2q4"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="d1m-lo-xbt" userLabel="PasswordSecureTextField">
+                    <rect key="frame" x="25" y="180" width="550" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="B1O-Dy-jTy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="passwordTextFieldTextDidChange:" destination="-1" eventType="editingChanged" id="h6b-7W-8IX"/>
+                        <outlet property="delegate" destination="-1" id="ob9-rL-a3X"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="xku-5X-Dx8" userLabel="ConfirmPasswordSecureTextField">
+                    <rect key="frame" x="25" y="235" width="550" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PFz-Rx-x4H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="confirmPasswordTextFieldDidChange:" destination="-1" eventType="editingChanged" id="wdt-WF-6dK"/>
+                        <outlet property="delegate" destination="-1" id="KPq-bL-WDC"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNb-uA-j3A" userLabel="CreateButton">
+                    <rect key="frame" x="25" y="345" width="550" height="50"/>
+                    <color key="backgroundColor" red="0.023529414089999999" green="0.56862747670000002" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="44H-kV-h8r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Create">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createButtonPressed:" destination="-1" eventType="touchUpInside" id="MeK-y3-jE9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4ax-ss-xmT" firstAttribute="top" secondItem="onl-SB-2ya" secondAttribute="top" constant="50" id="1XM-yK-6AZ"/>
+                <constraint firstItem="vNb-uA-j3A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="3QZ-Vn-vhP"/>
+                <constraint firstAttribute="centerX" secondItem="4ax-ss-xmT" secondAttribute="centerX" id="6hy-BD-OyJ"/>
+                <constraint firstAttribute="trailing" secondItem="d1m-lo-xbt" secondAttribute="trailing" constant="25" id="Cou-cO-RF7"/>
+                <constraint firstItem="HXa-yQ-Pgo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="G6g-dj-0zI"/>
+                <constraint firstAttribute="centerY" secondItem="4ax-ss-xmT" secondAttribute="centerY" id="I2j-vH-uhy"/>
+                <constraint firstAttribute="trailing" secondItem="xku-5X-Dx8" secondAttribute="trailing" constant="25" id="Icd-Ef-Vgh"/>
+                <constraint firstAttribute="centerX" secondItem="onl-SB-2ya" secondAttribute="centerX" id="JAQ-bE-QMb"/>
+                <constraint firstItem="vNb-uA-j3A" firstAttribute="bottom" secondItem="xku-5X-Dx8" secondAttribute="bottom" constant="110" id="Tsh-z9-YhB"/>
+                <constraint firstItem="gfj-MR-WcC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="WIc-cG-8UI"/>
+                <constraint firstAttribute="trailing" secondItem="vNb-uA-j3A" secondAttribute="trailing" constant="25" id="XYb-Eb-hik"/>
+                <constraint firstItem="d1m-lo-xbt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="c1A-kE-XLU"/>
+                <constraint firstItem="gfj-MR-WcC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="d0i-n1-4Hc"/>
+                <constraint firstItem="xku-5X-Dx8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="dwX-ZU-Sn5"/>
+                <constraint firstItem="gfj-MR-WcC" firstAttribute="bottom" secondItem="HXa-yQ-Pgo" secondAttribute="bottom" constant="-55" id="mXR-8p-UOO"/>
+                <constraint firstAttribute="trailing" secondItem="HXa-yQ-Pgo" secondAttribute="trailing" constant="25" id="mm2-Vn-sMQ"/>
+                <constraint firstItem="d1m-lo-xbt" firstAttribute="bottom" secondItem="xku-5X-Dx8" secondAttribute="bottom" constant="-55" id="sGS-5T-7Uz"/>
+                <constraint firstItem="VDh-d2-I2T" firstAttribute="bottom" secondItem="HXa-yQ-Pgo" secondAttribute="bottom" constant="55" id="sY6-D8-xOP"/>
+                <constraint firstItem="d1m-lo-xbt" firstAttribute="bottom" secondItem="VDh-d2-I2T" secondAttribute="bottom" constant="55" id="sst-uT-U5s"/>
+                <constraint firstAttribute="trailing" secondItem="gfj-MR-WcC" secondAttribute="trailing" constant="25" id="uNm-QS-RcW"/>
+                <constraint firstItem="VDh-d2-I2T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="uvZ-PL-vUe"/>
+                <constraint firstAttribute="trailing" secondItem="VDh-d2-I2T" secondAttribute="trailing" constant="25" id="vox-SA-Hez"/>
+            </constraints>
+            <point key="canvasLocation" x="-273" y="150"/>
+        </view>
+    </objects>
+</document>

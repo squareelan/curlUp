@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CUHistoryViewController" customModule="CurlUpMobileIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="XdS-cD-lw8" id="vya-LN-9y7"/>
+                <outlet property="loadingHistoryLabel" destination="Ecp-VV-W0H" id="r5b-tG-tRt"/>
+                <outlet property="loadingView" destination="xYN-Gn-kNq" id="N93-IN-gMn"/>
+                <outlet property="searchBar" destination="vOA-a3-9U9" id="uhw-3c-YKk"/>
+                <outlet property="tableView" destination="wge-8C-X8B" id="js5-tJ-I1z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wge-8C-X8B">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ife-SO-HF3"/>
+                        <outlet property="delegate" destination="-1" id="enx-oJ-sRk"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-a3-9U9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-Gn-kNq" userLabel="LoadingView">
+                    <rect key="frame" x="200" y="250" width="200" height="100"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading history" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-VV-W0H" userLabel="LoadingHistoryLabel">
+                            <rect key="frame" x="41" y="10" width="119" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XdS-cD-lw8" userLabel="ActivityIndicator">
+                            <rect key="frame" x="82" y="41" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.45098042490000001" green="0.13725490870000001" blue="0.23921570180000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="0yy-HD-OMw">
+                            <variation key="widthClass=compact" constant="100"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="100" id="3Kc-6w-Lnz"/>
+                        <constraint firstAttribute="centerY" secondItem="XdS-cD-lw8" secondAttribute="centerY" id="AxL-mv-RwQ"/>
+                        <constraint firstItem="Ecp-VV-W0H" firstAttribute="top" secondItem="xYN-Gn-kNq" secondAttribute="top" constant="10" id="TTt-GV-SKc"/>
+                        <constraint firstAttribute="centerX" secondItem="Ecp-VV-W0H" secondAttribute="centerX" id="VrR-oC-487"/>
+                        <constraint firstAttribute="centerX" secondItem="XdS-cD-lw8" secondAttribute="centerX" id="Wyu-2d-H5y"/>
+                        <constraint firstAttribute="width" constant="200" id="cUy-pd-bac"/>
+                        <constraint firstAttribute="width" constant="400" id="eJl-dq-rvN">
+                            <variation key="widthClass=compact" constant="200"/>
+                        </constraint>
+                        <constraint firstItem="XdS-cD-lw8" firstAttribute="top" secondItem="Ecp-VV-W0H" secondAttribute="bottom" constant="10" id="wCE-ry-oK2"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0yy-HD-OMw"/>
+                            <exclude reference="eJl-dq-rvN"/>
+                            <exclude reference="AxL-mv-RwQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0yy-HD-OMw"/>
+                            <include reference="eJl-dq-rvN"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vOA-a3-9U9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3fD-6a-g6Y"/>
+                <constraint firstAttribute="trailing" secondItem="wge-8C-X8B" secondAttribute="trailing" id="Ab1-Ox-h6J"/>
+                <constraint firstItem="vOA-a3-9U9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FB2-0J-ry8"/>
+                <constraint firstItem="wge-8C-X8B" firstAttribute="top" secondItem="vOA-a3-9U9" secondAttribute="bottom" id="Ms0-pk-eCw"/>
+                <constraint firstItem="wge-8C-X8B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SUe-7Y-gPt"/>
+                <constraint firstAttribute="centerY" secondItem="xYN-Gn-kNq" secondAttribute="centerY" id="nY9-mB-mma"/>
+                <constraint firstAttribute="bottom" secondItem="wge-8C-X8B" secondAttribute="bottom" id="oG8-dl-9Aj"/>
+                <constraint firstAttribute="centerX" secondItem="xYN-Gn-kNq" secondAttribute="centerX" id="p63-Vk-PBE"/>
+                <constraint firstItem="wge-8C-X8B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uC1-7l-xxb"/>
+                <constraint firstAttribute="trailing" secondItem="vOA-a3-9U9" secondAttribute="trailing" id="v6I-CD-BXq"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="uC1-7l-xxb"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CUSideBarViewTitleCell" id="8Am-O9-q9M" customClass="CUSideBarViewTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Am-O9-q9M" id="4tm-iQ-1Lx">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curlUp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQp-WK-fY1">
+                        <rect key="frame" x="88" y="18" width="133" height="85"/>
+                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" id="2Nx-e6-mUz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jQp-WK-fY1" secondAttribute="trailing" constant="174" id="6sT-1r-XvI"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" constant="10" id="C2u-NV-xET"/>
+                    <constraint firstAttribute="centerX" secondItem="jQp-WK-fY1" secondAttribute="centerX" constant="50" id="EQl-gh-rPH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jQp-WK-fY1" secondAttribute="bottom" constant="5" id="Hkm-Pg-TLJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jQp-WK-fY1" secondAttribute="trailing" constant="69" id="JKU-Ha-BoZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jQp-WK-fY1" secondAttribute="bottom" id="Qih-x0-bpO"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" constant="50" id="RsI-uP-ReS"/>
+                    <constraint firstAttribute="centerY" secondItem="jQp-WK-fY1" secondAttribute="centerY" id="YIQ-c2-1Hw"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" constant="70" id="cUd-AT-vlk"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" constant="80" id="eiR-IV-Ocl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jQp-WK-fY1" secondAttribute="trailing" id="em8-sy-l8Q"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="top" secondItem="4tm-iQ-1Lx" secondAttribute="topMargin" constant="10" id="hsN-bA-nkw"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="top" secondItem="4tm-iQ-1Lx" secondAttribute="topMargin" constant="10" id="jpq-X0-pp6"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="leading" secondItem="4tm-iQ-1Lx" secondAttribute="leadingMargin" constant="70" id="nau-7w-eAm"/>
+                    <constraint firstAttribute="centerX" secondItem="jQp-WK-fY1" secondAttribute="centerX" id="oeB-XL-1ZB"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="top" secondItem="4tm-iQ-1Lx" secondAttribute="topMargin" constant="-3" id="qIx-n4-m3q"/>
+                    <constraint firstAttribute="centerX" secondItem="jQp-WK-fY1" secondAttribute="centerX" id="s4E-M8-Xs8"/>
+                    <constraint firstItem="jQp-WK-fY1" firstAttribute="bottom" secondItem="4tm-iQ-1Lx" secondAttribute="bottomMargin" id="wF8-UT-VoZ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2Nx-e6-mUz"/>
+                        <exclude reference="6sT-1r-XvI"/>
+                        <exclude reference="C2u-NV-xET"/>
+                        <exclude reference="EQl-gh-rPH"/>
+                        <exclude reference="Hkm-Pg-TLJ"/>
+                        <exclude reference="JKU-Ha-BoZ"/>
+                        <exclude reference="RsI-uP-ReS"/>
+                        <exclude reference="YIQ-c2-1Hw"/>
+                        <exclude reference="cUd-AT-vlk"/>
+                        <exclude reference="hsN-bA-nkw"/>
+                        <exclude reference="nau-7w-eAm"/>
+                        <exclude reference="oeB-XL-1ZB"/>
+                        <exclude reference="qIx-n4-m3q"/>
+                        <exclude reference="s4E-M8-Xs8"/>
+                        <exclude reference="wF8-UT-VoZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.1882128193" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="titleLabel" destination="jQp-WK-fY1" id="afG-Uk-Ekp"/>
+            </connections>
+            <point key="canvasLocation" x="129.5" y="175"/>
+        </tableViewCell>
+    </objects>
+</document>

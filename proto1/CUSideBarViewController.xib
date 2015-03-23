@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CUSideBarViewController">
+            <connections>
+                <outlet property="tableView" destination="glT-dG-xuU" id="6g1-I9-mh5"/>
+                <outlet property="view" destination="Ned-yA-zAg" id="ugm-KB-9WC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ned-yA-zAg">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="glT-dG-xuU">
+                    <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                    <color key="backgroundColor" white="0.1882128193" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.1882128193" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0A5-a7-xy4"/>
+                        <outlet property="delegate" destination="-1" id="Au0-rr-09b"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.1882128193" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="glT-dG-xuU" secondAttribute="bottom" id="A7P-2j-YSt"/>
+                <constraint firstItem="glT-dG-xuU" firstAttribute="leading" secondItem="Ned-yA-zAg" secondAttribute="leading" id="HeI-op-NPI"/>
+                <constraint firstItem="glT-dG-xuU" firstAttribute="top" secondItem="Ned-yA-zAg" secondAttribute="top" constant="20" id="eiC-fd-lry"/>
+                <constraint firstItem="glT-dG-xuU" firstAttribute="top" secondItem="Ned-yA-zAg" secondAttribute="top" id="qXh-OU-gi4"/>
+                <constraint firstItem="glT-dG-xuU" firstAttribute="top" secondItem="Ned-yA-zAg" secondAttribute="top" id="rUw-f7-XSH"/>
+                <constraint firstAttribute="trailing" secondItem="glT-dG-xuU" secondAttribute="trailing" id="tXc-GJ-JNB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="qXh-OU-gi4"/>
+                    <exclude reference="rUw-f7-XSH"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="484" y="-15"/>
+        </view>
+    </objects>
+</document>

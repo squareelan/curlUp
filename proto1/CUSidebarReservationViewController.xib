@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CUSidebarReservationViewController" customModule="CurlUpMobileIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="gcr-A3-AKU" id="fXC-a5-Zcx"/>
+                <outlet property="loadingReservationsLabel" destination="ed9-W8-GL1" id="PAs-OL-TUk"/>
+                <outlet property="loadingView" destination="SUc-6n-J6Q" id="87A-8C-bEf"/>
+                <outlet property="searchBar" destination="GjI-Lv-rzi" id="kLa-uZ-E9a"/>
+                <outlet property="tableView" destination="rYZ-uQ-YAd" id="bm2-xL-x7M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rYZ-uQ-YAd">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fae-YE-7GS"/>
+                        <outlet property="delegate" destination="-1" id="49w-In-uIP"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GjI-Lv-rzi">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUc-6n-J6Q" userLabel="LoadingView">
+                    <rect key="frame" x="200" y="250" width="200" height="100"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading reservations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed9-W8-GL1" userLabel="LoadingReservationsLabel">
+                            <rect key="frame" x="20" y="10" width="160" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gcr-A3-AKU" userLabel="ActivityIndicator">
+                            <rect key="frame" x="82" y="41" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.45098042490000001" green="0.13725490870000001" blue="0.23921570180000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="XTh-ur-Q3K"/>
+                        <constraint firstAttribute="width" constant="400" id="ZrQ-0w-r5B">
+                            <variation key="widthClass=compact" constant="200"/>
+                        </constraint>
+                        <constraint firstItem="gcr-A3-AKU" firstAttribute="top" secondItem="ed9-W8-GL1" secondAttribute="bottom" constant="10" id="fAN-7Z-b0U"/>
+                        <constraint firstAttribute="height" constant="100" id="k35-Be-vxX"/>
+                        <constraint firstAttribute="centerX" secondItem="ed9-W8-GL1" secondAttribute="centerX" id="k9u-zq-f4t"/>
+                        <constraint firstItem="ed9-W8-GL1" firstAttribute="top" secondItem="SUc-6n-J6Q" secondAttribute="top" constant="10" id="kia-Ao-YaC"/>
+                        <constraint firstAttribute="centerX" secondItem="gcr-A3-AKU" secondAttribute="centerX" id="q5W-jr-pOl"/>
+                        <constraint firstAttribute="height" constant="600" id="vAq-cn-cie">
+                            <variation key="widthClass=compact" constant="100"/>
+                        </constraint>
+                        <constraint firstAttribute="centerY" secondItem="gcr-A3-AKU" secondAttribute="centerY" id="yDg-aJ-pzR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vAq-cn-cie"/>
+                            <exclude reference="ZrQ-0w-r5B"/>
+                            <exclude reference="yDg-aJ-pzR"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="vAq-cn-cie"/>
+                            <include reference="ZrQ-0w-r5B"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rYZ-uQ-YAd" secondAttribute="trailing" id="Dh0-n7-nI9"/>
+                <constraint firstItem="rYZ-uQ-YAd" firstAttribute="top" secondItem="GjI-Lv-rzi" secondAttribute="bottom" id="Gy9-wL-cQx"/>
+                <constraint firstAttribute="centerX" secondItem="SUc-6n-J6Q" secondAttribute="centerX" id="HIB-ag-UnH"/>
+                <constraint firstAttribute="centerY" secondItem="SUc-6n-J6Q" secondAttribute="centerY" id="Izp-cf-yCX"/>
+                <constraint firstItem="GjI-Lv-rzi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PC0-zY-FPJ"/>
+                <constraint firstItem="rYZ-uQ-YAd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Taz-an-VLz"/>
+                <constraint firstAttribute="trailing" secondItem="GjI-Lv-rzi" secondAttribute="trailing" id="fHg-p3-w2A"/>
+                <constraint firstAttribute="bottom" secondItem="rYZ-uQ-YAd" secondAttribute="bottom" id="pi3-ez-bVg"/>
+                <constraint firstItem="GjI-Lv-rzi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xaI-xk-ISi"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

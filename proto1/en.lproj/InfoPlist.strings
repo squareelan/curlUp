@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+//<key>NSLocationWhenInUseUsageDescription</key>
+//<string>curlUp will show you the lists of Hair Salons based on your GPS location</string>
+//
+//<key>NSLocationAlwaysUsageDescription</key>
+//<string>curlUp will show you the lists of Hair Salons based on your GPS location</string>

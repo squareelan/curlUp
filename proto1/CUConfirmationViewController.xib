@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CUConfirmationViewController" customModule="CurlUpMobileIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="reservationDateLabel" destination="BLb-AZ-B5x" id="cFe-js-JVf"/>
+                <outlet property="reservationTimeLabel" destination="YHI-Y7-UyL" id="eIA-CY-ndP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Confirm your Reservation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyD-yk-4xD">
+                    <rect key="frame" x="91" y="175" width="419" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yKS-gs-CRy"/>
+                        <constraint firstAttribute="width" constant="419" id="zM6-Ye-q16"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="309-oB-6Jc">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HiU-Wi-Kpn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Confirm &amp; To Main">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmBtnPressed:" destination="-1" eventType="touchUpInside" id="Ktf-fo-SxJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Reservation time :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRC-pw-3Up">
+                    <rect key="frame" x="75" y="260" width="200" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Nzl-pF-Ld4">
+                            <variation key="widthClass=compact" constant="170"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="32" id="t2a-7Z-lNo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="6:30 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-Y7-UyL">
+                    <rect key="frame" x="423" y="260" width="100" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Jru-Am-8E5"/>
+                        <constraint firstAttribute="width" constant="100" id="Z8c-3a-aVc">
+                            <variation key="widthClass=compact" constant="80"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tX-6f-A7u">
+                    <rect key="frame" x="522" y="40" width="48" height="30"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtnpressed:" destination="-1" eventType="touchUpInside" id="FR0-BG-x0A"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Jan 31, 2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLb-AZ-B5x">
+                    <rect key="frame" x="275" y="260" width="150" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Hc9-f0-KIv">
+                            <variation key="widthClass=compact" constant="130"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="32" id="XHF-da-rMV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="309-oB-6Jc" secondAttribute="trailing" id="1js-BH-AV9"/>
+                <constraint firstItem="YHI-Y7-UyL" firstAttribute="trailing" secondItem="TyD-yk-4xD" secondAttribute="trailing" constant="-110" id="BEH-gB-DuV">
+                    <variation key="widthClass=compact" constant="-95"/>
+                </constraint>
+                <constraint firstItem="BLb-AZ-B5x" firstAttribute="top" secondItem="hRC-pw-3Up" secondAttribute="bottom" constant="20" id="KSd-rE-nKQ">
+                    <variation key="widthClass=compact" constant="30"/>
+                </constraint>
+                <constraint firstItem="hRC-pw-3Up" firstAttribute="top" secondItem="TyD-yk-4xD" secondAttribute="bottom" constant="79" id="LtU-Bk-88O">
+                    <variation key="widthClass=compact" constant="90"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="TyD-yk-4xD" secondAttribute="centerX" id="O8R-zY-HaR"/>
+                <constraint firstItem="YHI-Y7-UyL" firstAttribute="leading" secondItem="BLb-AZ-B5x" secondAttribute="trailing" constant="42" id="bKR-ea-uc0">
+                    <variation key="widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="309-oB-6Jc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e3n-T2-LAg"/>
+                <constraint firstAttribute="bottom" secondItem="309-oB-6Jc" secondAttribute="bottom" id="f4y-4n-Ito"/>
+                <constraint firstItem="hRC-pw-3Up" firstAttribute="leading" secondItem="TyD-yk-4xD" secondAttribute="leading" constant="75" id="kQy-HH-as9"/>
+                <constraint firstItem="YHI-Y7-UyL" firstAttribute="top" secondItem="BLb-AZ-B5x" secondAttribute="top" constant="-10" id="lwS-WP-Ywh">
+                    <variation key="widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="TyD-yk-4xD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="vwh-xO-mzc">
+                    <variation key="widthClass=compact" constant="100"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="3tX-6f-A7u" secondAttribute="trailing" constant="30" id="wQb-Ae-os5"/>
+                <constraint firstItem="3tX-6f-A7u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="wZr-Vo-vqC"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="vwh-xO-mzc"/>
+                    <exclude reference="LtU-Bk-88O"/>
+                    <exclude reference="kQy-HH-as9"/>
+                    <exclude reference="KSd-rE-nKQ"/>
+                    <exclude reference="BEH-gB-DuV"/>
+                    <exclude reference="bKR-ea-uc0"/>
+                    <exclude reference="lwS-WP-Ywh"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="vwh-xO-mzc"/>
+                    <include reference="LtU-Bk-88O"/>
+                    <include reference="kQy-HH-as9"/>
+                    <include reference="KSd-rE-nKQ"/>
+                    <include reference="BEH-gB-DuV"/>
+                    <include reference="bKR-ea-uc0"/>
+                    <include reference="lwS-WP-Ywh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
